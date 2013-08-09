@@ -68,6 +68,7 @@ class CompileCommand(TextCommand):
 		args = ['-c', self.view.file_name()]
 		if no_wrapper:
 			args = ['-b'] + args
+		args = ['-o', settings.get('outDir', '.')] + args
 		result = run("coffee", args=args)
 
 		if result['okay'] is True:

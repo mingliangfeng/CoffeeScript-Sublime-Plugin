@@ -11,6 +11,7 @@
 	*/
 ,	"libDir": ""
 ,	"srcDir": ""
+, "outDir": "."
 
 	/*
 		Compile without the top-level function wrapper (coffee -b).
